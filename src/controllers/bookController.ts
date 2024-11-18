@@ -4,14 +4,14 @@ import Book from "./../book";
 export let allBooks = (req: Request, res: Response) => {
     Book.find()
     .then((books) => {
-        console.log("Found Book ID!");
+        console.log("Found All Books!");
         console.log(books);
         res.send(books);
     })
     .catch((err) => {
-        console.log("GET All Error!");
+        console.log("GET All Books Error!");
         console.log(err);
-        res.send("GET All Error! " + err.message);
+        res.send("GET All Books Error! " + err.message);
     })
   };
 
@@ -22,9 +22,9 @@ export let allBooks = (req: Request, res: Response) => {
         res.send(book);
     })
     .catch((err) => {
-        console.log("GET By ID Error!");
+        console.log("GET Book By ID Error!");
         console.log(err);
-        res.send("GET By ID Error! " + err.message);
+        res.send("GET Book By ID Error! " + err.message);
     })
   };
 
@@ -35,9 +35,9 @@ export let allBooks = (req: Request, res: Response) => {
         res.send("Successfully Deleted Book");
     })
     .catch((err) => {
-        console.log("DELETE Error!");
+        console.log("DELETE Book Error!");
         console.log(err);
-        res.send("DELETE Error! " + err.message);
+        res.send("DELETE Book Error! " + err.message);
     })
   };
 
