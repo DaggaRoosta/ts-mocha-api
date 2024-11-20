@@ -1,11 +1,10 @@
 let typescript = require("typescript");
 let JsonSourceFile = typescript.JsonSourceFile;
 const jsonData: InstanceType<typeof JsonSourceFile> = require("./librarySource.json");
+const values: InstanceType<typeof Object> = Object.values(jsonData)
 
-function getRandomBook(): Object {
-    const values: any = Object.values(jsonData)
-    const randomValue: Object = values[Math.round(Math.random() * values.length)]
+function getRandomBook(data: Object = values): Object {
+    const randomValue: Object = data[Math.round(Math.random() * Object.keys(data).length)]
     return randomValue;
 }
-
 module.exports = { getRandomBook };

@@ -31,12 +31,14 @@ export let allBooks = (req: Request, res: Response) => {
   export let deleteBook = (req: Request, res: Response) => {
     Book.deleteOne({ _id: req.params.id })
     .then(() => {
-        console.log("Successfully Deleted Book");
-        res.send("Successfully Deleted Book");
+        console.log("Successfully Deleted Book" + req.params.id);
+        res.status(204);
+        res.send("Successfully Deleted Book " + req.params.id);
     })
     .catch((err) => {
         console.log("DELETE Book Error!");
         console.log(err);
+        res.status(404);
         res.send("DELETE Book Error! " + err.message);
     })
   };
@@ -51,6 +53,7 @@ export let allBooks = (req: Request, res: Response) => {
     .catch((err) => {
         console.log("DELETE All Books Error!");
         console.log(err);
+        res.status(500);
         res.send("DELETE All Books Error! " + err.message);
     })
   };
