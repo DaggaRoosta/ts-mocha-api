@@ -8,7 +8,8 @@ app.set("port", process.env.PORT || 3000);
 
 // Home API Endpoint
 app.get("/", (req: Request, res: Response) => { 
-    res.send("hi") 
+    res.send("Hello World!") 
+    console.log("Hello World! response sent") 
 });
 
 // Book API Endpoints

@@ -1,0 +1,402 @@
+[
+    {
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee"
+    },
+    {
+        "title": "1984",
+        "author": "George Orwell"
+    },
+    {
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald"
+    },
+    {
+        "title": "Harry Potter and the Sorcerer’s Stone",
+        "author": "J.K. Rowling"
+    },
+    {
+        "title": "Animal Farm",
+        "author": "George Orwell"
+    },
+    {
+        "title": "The Hobbit",
+        "author": "J.R.R. Tolkien"
+    },
+    {
+        "title": "The Little Prince",
+        "author": "Antoine de Saint-Exupéry"
+    },
+    {
+        "title": "Fahrenheit 451",
+        "author": "Ray Bradbury"
+    },
+    {
+        "title": "The Catcher in the Rye",
+        "author": "J.D. Salinger"
+    },
+    {
+        "title": "The Lion, the Witch and the Wardrobe",
+        "author": "C.S. Lewis"
+    },
+    {
+        "title": "The Grapes of Wrath",
+        "author": "John Steinbeck"
+    },
+    {
+        "title": "One Hundred Years of Solitude",
+        "author": "Gabriel García Márquez"
+    },
+    {
+        "title": "Brave New World",
+        "author": "Aldous Huxley"
+    },
+    {
+        "title": "Gone with the Wind",
+        "author": "Margaret Mitchell"
+    },
+    {
+        "title": "Of Mice and Men",
+        "author": "John Steinbeck"
+    },
+    {
+        "title": "Harry Potter and the Prisoner of Azkaban",
+        "author": "J.K. Rowling"
+    },
+    {
+        "title": "The Giver",
+        "author": "Lois Lowry"
+    },
+    {
+        "title": "Lord of the Flies",
+        "author": "William Golding"
+    },
+    {
+        "title": "Slaughterhouse-Five",
+        "author": "Kurt Vonnegut Jr."
+    },
+    {
+        "title": "Lolita",
+        "author": "Vladimir Nabokov"
+    },
+    {
+        "title": "East of Eden",
+        "author": "John Steinbeck"
+    },
+    {
+        "title": "The Handmaid’s Tale",
+        "author": "Margaret Atwood"
+    },
+    {
+        "title": "The Fellowship of the Ring",
+        "author": "J.R.R. Tolkien"
+    },
+    {
+        "title": "One Flew Over the Cuckoo’s Nest",
+        "author": "Ken Kesey"
+    },
+    {
+        "title": "The Stranger",
+        "author": "Albert Camus"
+    },
+    {
+        "title": "Memoirs of a Geisha",
+        "author": "Arthur Golden"
+    },
+    {
+        "title": "The Ultimate Hitchhiker’s Guide to the Galaxy",
+        "author": "Douglas Adams"
+    },
+    {
+        "title": "Charlotte’s Web",
+        "author": "E.B. White"
+    },
+    {
+        "title": "Harry Potter and the Chamber of Secrets",
+        "author": "J.K. Rowling"
+    },
+    {
+        "title": "The Chronicles of Narnia",
+        "author": "C.S. Lewis"
+    },
+    {
+        "title": "A Wrinkle in Time",
+        "author": "Madeleine L'Engle"
+    },
+    {
+        "title": "The Old Man and the Sea",
+        "author": "Ernest Hemingway"
+    },
+    {
+        "title": "Ender’s Game",
+        "author": "Orson Scott Card"
+    },
+    {
+        "title": "The Giving Tree",
+        "author": "Shel Silverstein"
+    },
+    {
+        "title": "The Return of the King",
+        "author": "J.R.R. Tolkien"
+    },
+    {
+        "title": "The Two Towers",
+        "author": "J.R.R. Tolkien"
+    },
+    {
+        "title": "Night",
+        "author": "Elie Wiesel"
+    },
+    {
+        "title": "The Bell Jar",
+        "author": "Sylvia Plath"
+    },
+    {
+        "title": "A Tree Grows in Brooklyn",
+        "author": "Betty Smith"
+    },
+    {
+        "title": "The Alchemist",
+        "author": "Paulo Coelho"
+    },
+    {
+        "title": "Watership Down",
+        "author": "Richard Adams"
+    },
+    {
+        "title": "Anne of Green Gables",
+        "author": "L.M. Montgomery"
+    },
+    {
+        "title": "In Cold Blood",
+        "author": "Truman Capote"
+    },
+    {
+        "title": "Green Eggs and Ham",
+        "author": "Dr. Seuss"
+    },
+    {
+        "title": "The Color Purple",
+        "author": "Alice Walker"
+    },
+    {
+        "title": "Atlas Shrugged",
+        "author": "Ayn Rand"
+    },
+    {
+        "title": "The Metamorphosis",
+        "author": "Franz Kafka"
+    },
+    {
+        "title": "Love in the Time of Cholera",
+        "author": "Gabriel García Márquez"
+    },
+    {
+        "title": "The Poisonwood Bible",
+        "author": "Barbara Kingsolver"
+    },
+    {
+        "title": "The Secret Garden",
+        "author": "Frances Hodgson Burnett"
+    },
+    {
+        "title": "The Complete Sherlock Holmes",
+        "author": "Arthur Conan Doyle"
+    },
+    {
+        "title": "Rebecca",
+        "author": "Daphne du Maurier"
+    },
+    {
+        "title": "Siddhartha",
+        "author": "Hermann Hesse"
+    },
+    {
+        "title": "The Stand",
+        "author": "Stephen King"
+    },
+    {
+        "title": "The Unbearable Lightness of Being",
+        "author": "Milan Kundera"
+    },
+    {
+        "title": "The Name of the Rose",
+        "author": "Umberto Eco"
+    },
+    {
+        "title": "Dune",
+        "author": "Frank Herbert"
+    },
+    {
+        "title": "A Prayer for Owen Meany",
+        "author": "John Irving"
+    },
+    {
+        "title": "Where the Wild Things Are",
+        "author": "Maurice Sendak"
+    },
+    {
+        "title": "The Lorax",
+        "author": "Dr. Seuss"
+    },
+    {
+        "title": "Charlie and the Chocolate Factory",
+        "author": "Roald Dahl"
+    },
+    {
+        "title": "The Pillars of the Earth",
+        "author": "Ken Follett"
+    },
+    {
+        "title": "The Master and Margarita",
+        "author": "Mikhail Bulgakov"
+    },
+    {
+        "title": "The Outsiders",
+        "author": "S.E. Hinton"
+    },
+    {
+        "title": "The Hitchhiker’s Guide to the Galaxy",
+        "author": "Douglas Adams"
+    },
+    {
+        "title": "On the Road",
+        "author": "Jack Kerouac"
+    },
+    {
+        "title": "The Sun Also Rises",
+        "author": "Ernest Hemingway"
+    },
+    {
+        "title": "Ulysses",
+        "author": "James Joyce"
+    },
+    {
+        "title": "Beloved",
+        "author": "Toni Morrison"
+    },
+    {
+        "title": "All Quiet on the Western Front",
+        "author": "Erich Maria Remarque"
+    },
+    {
+        "title": "The Good Earth",
+        "author": "Pearl S. Buck"
+    },
+    {
+        "title": "A Confederacy of Dunces",
+        "author": "John Kennedy Toole"
+    },
+    {
+        "title": "Angela’s Ashes",
+        "author": "Frank McCourt"
+    },
+    {
+        "title": "The Joy Luck Club",
+        "author": "Amy Tan"
+    },
+    {
+        "title": "For Whom the Bell Tolls",
+        "author": "Ernest Hemingway"
+    },
+    {
+        "title": "The Fountainhead",
+        "author": "Ayn Rand"
+    },
+    {
+        "title": "The Sound and the Fury",
+        "author": "William Faulkner"
+    },
+    {
+        "title": "The World According to Garp",
+        "author": "John Irving"
+    },
+    {
+        "title": "A Clockwork Orange",
+        "author": "Anthony Burgess"
+    },
+    {
+        "title": "Little House on the Prairie",
+        "author": "Laura Ingalls Wilder"
+    },
+    {
+        "title": "Their Eyes Were Watching God",
+        "author": "Zora Neale Hurston"
+    },
+    {
+        "title": "A Farewell to Arms",
+        "author": "Ernest Hemingway"
+    },
+    {
+        "title": "Invisible Man",
+        "author": "Ralph Ellison"
+    },
+    {
+        "title": "Flowers for Algernon",
+        "author": "Daniel Keyes"
+    },
+    {
+        "title": "Where the Red Fern Grows",
+        "author": "Wilson Rawls"
+    },
+    {
+        "title": "Mere Christianity",
+        "author": "C.S. Lewis"
+    },
+    {
+        "title": "Waiting for Godot",
+        "author": "Samuel Beckett"
+    },
+    {
+        "title": "A Game of Thrones",
+        "author": "George R.R. Martin"
+    },
+    {
+        "title": "Lonesome Dove",
+        "author": "Larry McMurtry"
+    },
+    {
+        "title": "The Things They Carried",
+        "author": "Tim O'Brien"
+    },
+    {
+        "title": "The Red Tent",
+        "author": "Anita Diamant"
+    },
+    {
+        "title": "Sophie’s Choice",
+        "author": "William Styron"
+    },
+    {
+        "title": "To the Lighthouse",
+        "author": "Virginia Woolf"
+    },
+    {
+        "title": "Fear and Loathing in Las Vegas",
+        "author": "Hunter S. Thompson"
+    },
+    {
+        "title": "Franny and Zooey",
+        "author": "J.D. Salinger"
+    },
+    {
+        "title": "Cat’s Cradle",
+        "author": "Kurt Vonnegut Jr."
+    },
+    {
+        "title": "A Portrait of the Artist as a Young Man",
+        "author": "James Joyce"
+    },
+    {
+        "title": "Blindness",
+        "author": "José Saramago"
+    },
+    {
+        "title": "And Then There Were None",
+        "author": "Agatha Christie"
+    },
+    {
+        "title": "Winnie-the-Pooh",
+        "author": "A.A. Milne"
+    }
+]

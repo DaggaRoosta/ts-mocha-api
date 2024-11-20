@@ -41,6 +41,20 @@ export let allBooks = (req: Request, res: Response) => {
     })
   };
 
+  export let deleteAllBooks = (req: Request, res: Response) => {
+    Book.deleteMany({})
+    .then(() => {
+        console.log("Successfully Deleted All Books!");
+        res.status(204);
+        res.send("Successfully Deleted All Books!");
+    })
+    .catch((err) => {
+        console.log("DELETE All Books Error!");
+        console.log(err);
+        res.send("DELETE All Books Error! " + err.message);
+    })
+  };
+
   export let updateBook = (req: Request, res: Response) => {
     console.log(req.body);
 
@@ -65,11 +79,13 @@ export let allBooks = (req: Request, res: Response) => {
     .then(() => {
         console.log("Successfully Added Book");
         console.log(book);
+        res.status(201);
         res.send(book);
     })
     .catch((err) => {
         console.log("POST Add Book Error!");
         console.log(err);
+        res.status(400);
         res.send("POST Add Book Error! " + err.message);
     })
   };
