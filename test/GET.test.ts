@@ -5,7 +5,7 @@ let chakram = require('../node_modules/chakram/lib/chakram.js');
 const expect = chakram.expect;
 
 
-describe('Successful Deletion of a Book', function () {
+describe('Successful Retrieval of a Book', function () {
   let postResponse: any;        //should be ChakramResponse
   let deleteResponse: any;      //should be ChakramResponse
   let afterDeleteResponse: any; //should be ChakramResponse
@@ -13,7 +13,7 @@ describe('Successful Deletion of a Book', function () {
   let afterDeleteResponseBody: Object[];
   let bookId: String;
 
-  before('A DELETE request is sent to the API endpoint with the specified ID', function () {  
+  before('A GET request is sent to the API endpoint with the specified ID', function () {  
     let book = getRandomBook();
     postResponse = chakram.post('http://localhost:3000/book/', book);
     return postResponse.then(function(getRespObj: any) {
@@ -43,7 +43,7 @@ describe('Successful Deletion of a Book', function () {
   });
 });
 
-describe("Delete Book with Bad ID", function () {
+describe("Retrieve Book with Bad ID", function () {
   let apiResponse: any; //should be ChakramResponse
   let responseBody: Object;
 
@@ -60,14 +60,14 @@ describe("Delete Book with Bad ID", function () {
   });
 });
 
-describe("Successful Deletion of All Books", function () {
+describe("Successful Retrieval of All Books", function () {
   let postResponse: any;        //should be ChakramResponse
   let deleteResponse: any;      //should be ChakramResponse
   let afterDeleteResponse: any; //should be ChakramResponse
   let postResponseBody: Object[];
   let afterDeleteResponseBody: Object[];
 
-  before("A valid DELETE request is sent to the API endpoint", function () {
+  before("A valid GET request is sent to the API endpoint", function () {
     let book = getRandomBook();
     postResponse = chakram.post('http://localhost:3000/book/', book);
     return postResponse.then(function(getRespObj: any) {
@@ -75,7 +75,7 @@ describe("Successful Deletion of All Books", function () {
       return postResponseBody;
     })
     .then(function() {
-      deleteResponse = chakram.delete('http://localhost:3000/books/');
+      deleteResponse = chakram.get('http://localhost:3000/books/');
       return deleteResponse;
     })
     .then(function() {

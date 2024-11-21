@@ -18,8 +18,16 @@ export interface IBook extends mongoose.Document {
 }
 
 export const BookSchema = new mongoose.Schema({
-  title: { type: String, required: true },
-  author: { type: String, required: true }
+  title: { 
+    type: String, 
+    required: true,
+    minLength: 1
+  },
+  author: { 
+    type: String, 
+    required: true,
+    minLength: 1
+  }
 });
 
 const Book = mongoose.model<IBook>("Book", BookSchema);

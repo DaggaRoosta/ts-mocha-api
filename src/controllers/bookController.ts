@@ -58,22 +58,35 @@ export let allBooks = (req: Request, res: Response) => {
     })
   };
 
-  export let updateBook = (req: Request, res: Response) => {
-    console.log(req.body);
+  export let updateBook = async (req: Request, res: Response) => {
 
-    Book.findByIdAndUpdate(req.params.id, req.body)
-    .then(() => {
-        var book = new Book(req.body);
-        book._id = req.params.id;
-        console.log("Successfully Updated Book");
-        console.log(book);
-        res.send(book);
-    })
-    .catch((err) => {
-        console.log("PUT Update Book Error!");
-        console.log(err);
-        res.send("PUT Update Book Error! " + err.message);
-    })
+    try {
+        const updatedBook = await Book.findByIdAndUpdate(
+            req.params.id, 
+            req.body, 
+            { new: true, runValidators: true }
+        );
+        if (!updatedBook) {
+            console.log("PUT Update Book Error - Book Not Found!");
+            res.status(404);
+            res.send("PUT Update Book Error - Book Not Found!");
+        } else {
+            console.log("Updated Book:");
+            console.log(updatedBook);
+            console.log("Successfully Updated Book");
+            console.log(req.body);
+            res.status(200);
+            res.send(updatedBook);
+        }
+    } catch (err: any) {
+        if (err.name === 'ValidationError') {
+            console.log("PUT Update Book Error - Required Fields Missing!");
+            console.log(err);
+            res.status(400);
+            res.send("PUT Update Book Error - Required Fields Missing! " + err.message);
+        } 
+        else throw(err);
+    };
   };
 
   export let addBook = (req: Request, res: Response) => {
