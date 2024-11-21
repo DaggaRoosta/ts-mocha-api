@@ -1,4 +1,6 @@
-const { getRandomBook } = require('../util/randomBook.ts');
+const { getRandomBook, 
+        populateLibrary, 
+        tearDownLibrary } = require('../util/libraryUtils.ts');
 let chakram = require('../node_modules/chakram/lib/chakram.js');
 const expect = chakram.expect;
 
@@ -7,7 +9,8 @@ describe("POST 1: Successful Addition of a Book", function () {
   let bookResponse: any; //should be ChakramResponse
   let responseBody: Object;
 
-  before("A valid POST request is sent to the API endpoint", function () {
+  before("A valid POST request is sent to the API endpoint", async function () {
+    await populateLibrary();
     let book = getRandomBook();
     bookResponse = chakram.post('http://localhost:3000/book/', book);
     return bookResponse.then(function(respObj) {
@@ -26,14 +29,18 @@ describe("POST 1: Successful Addition of a Book", function () {
   it("POST 1c: The response should include the ID of the newly created book", function () {
     expect(responseBody).to.include.key("_id");
   });
+
+  after(async function() {
+    await tearDownLibrary();
+  });
 });
 
 describe("POST 2: Add Book with Missing Required Fields", function () {
-  this.timeout(500000000);
   let apiResponse: any; //should be ChakramResponse
   let responseBody: Object;
 
-  before("A invalid POST request is sent to the API endpoint", function () {
+  before("A invalid POST request is sent to the API endpoint", async function () {
+    await populateLibrary();
     let book = {"badtitle": "Nada", "badauthor": "Nada Dada"};
     apiResponse = chakram.post('http://localhost:3000/book/', book);
     return apiResponse.then(function(respObj) {
@@ -50,6 +57,9 @@ describe("POST 2: Add Book with Missing Required Fields", function () {
     expect(responseBody).to.have.string("Path `author` is required");
   });
 
+  after(async function() {
+    await tearDownLibrary();
+  });
 });
 
-  export {};
+export {};

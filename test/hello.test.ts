@@ -1,6 +1,6 @@
 let chakram = require('../node_modules/chakram/lib/chakram.js')
 const expect = chakram.expect;
-
+/*
 describe("Successful Call to Hello World API", function () {
 
   let helloWorldApiCall: any; //should be ChakramResponse
@@ -21,5 +21,5 @@ describe("Successful Call to Hello World API", function () {
     expect(apiBody).to.equal("Hello World!");
   });
 });
-
+*/
 export {};

@@ -1,11 +1,2 @@
 {
-    "node-option": [
-        "experimental-specifier-resolution=node",
-        "loader=ts-node/esm"
-    ],
-    "mochaExplorer.files": "test/**/*.ts",
-    "mochaExplorer.require": "ts-node/register",
-    "mochaExplorer.timeout": 120000,
-    "require": "ts-node/register",
-    "spec": "test/**/*.ts"
 }
