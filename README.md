@@ -16,9 +16,9 @@ In Terminal run `npm run watch` to run the server. The API should be available a
 
 To call the API once it's running, feel free to use the Postman collection in the base of the repo.
 
-## Licence Information
+## License Information
 
-As this repo exists solely as a skills demonstration, no licence is required or asserted. Feel free to download and use as you wish for any non-remunerative purpose.
+As this repo exists solely as a skills demonstration, no license is required or asserted. Feel free to download and use as you wish for any non-remunerative purpose.
 
 ## Links
 
